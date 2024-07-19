@@ -10,6 +10,10 @@
 ## よくある質問
 [よくある質問](https://hazimeteotukai.github.io/_____Hazimete_Otukai_script_____/よくある質問)
 
+## スクリプト辞めたい方
+[スクリプト辞めたい方](https://hazimeteotukai.github.io/_____Hazimete_Otukai_script_____/スクリプト辞めたい方)
+
+
 ## 歴代バージョン
 [歴代バージョン](https://hazimeteotukai.github.io/_____Hazimete_Otukai_script_____/歴代バージョン)
 
