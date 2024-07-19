@@ -2,9 +2,35 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>discord_Hazimete_Otuai_site</title>
+    <title>ページのタイトル</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>ようこそ</h1>
+    <h1>ページのタイトル</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='https://example.com'">ボタン1</button>
+        <button onclick="window.location.href='https://example2.com'">ボタン2</button>
+    </div>
 </body>
 </html>
