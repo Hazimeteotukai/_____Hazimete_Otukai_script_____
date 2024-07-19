@@ -1,1 +1,2 @@
-# _____Hazimete_Otukai_discord_Website_____
+# スクリプトに関する事
+
