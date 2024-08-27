@@ -1,5 +1,5 @@
 # スクリプトに関する事が書かれてます
-
+# ⚠️只今、スクリプト更新をストップしています。⚠️
 
 ## 利用方法
 [利用方法](https://hazimeteotukai.github.io/_____Hazimete_Otukai_script_____/利用方法)
