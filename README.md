@@ -1,7 +1,6 @@
 # スクリプトに関する事が書かれてます
 
 ## スクリプト復活させるように努力してます。
-2024/09/25
 
 ## 利用方法
 [利用方法](https://hazimeteotukai.github.io/_____Hazimete_Otukai_script_____/利用方法)
@@ -20,4 +19,4 @@
 [歴代バージョン](https://hazimeteotukai.github.io/_____Hazimete_Otukai_script_____/歴代バージョン)
 
 
-更新:2024/07/20
+更新:2024/09/25
