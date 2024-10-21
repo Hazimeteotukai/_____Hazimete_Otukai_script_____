@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファイルダウンロードページ</title>
+    <style>
+        #download-btn {
+            display: none;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ファイルダウンロード</h1>
+    <p id="message"></p>
+    <p id="countdown"></p>
+    <button id="download-btn" onclick="downloadFile()">ファイルをダウンロード</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // リファラーを確認
+            var referrer = document.referrer;
+            var allowedReferrer = 'https://rowan-quintessential-comma.glitch.me/';
+            var messageElement = document.getElementById('message');
+            var countdownElement = document.getElementById('countdown');
+            var downloadButton = document.getElementById('download-btn');
+
+            // リファラーが正しいか確認
+            if (referrer !== allowedReferrer) {
+                messageElement.textContent = 'アクセスできません。';
+                return;
+            }
+
+            // リファラーが正しい場合、カウントダウン開始
+            messageElement.textContent = '10秒後にダウンロードが可能になります。';
+            var countdown = 10;
+            var countdownInterval = setInterval(function() {
+                countdownElement.textContent = countdown + '秒';
+                countdown--;
+
+                if (countdown < 0) {
+                    clearInterval(countdownInterval);
+                    countdownElement.textContent = '';
+                    messageElement.textContent = 'ダウンロードボタンが表示されました。';
+                    downloadButton.style.display = 'inline-block';
+                }
+            }, 1000);
+        });
+
+        function downloadFile() {
+            // ダウンロードさせたいファイルのURL
+            var fileUrl = 'path/to/your/file.zip'; // ダウンロードさせたいファイルのパスに置き換える
+            window.location.href = fileUrl;
+        }
+    </script>
+</body>
+</html>
